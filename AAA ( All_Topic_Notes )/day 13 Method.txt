@@ -1,0 +1,58 @@
+The methods which return any value do NOT mention void as their return type.
+
+The method which return any value has return statement in their body.
+
+We can receive or collect the data returned by a method.
+
+If we do not need the value returned by the method, we can skip collecting it in a variable.
+
+We can NOT receive or collect the data from a method with return type as void.
+
+Returning a value and parameters are totally independent of each other.
+For example:
+
+m1 -> No parameters and not retuning any value.
+m2 -> No parameters but retuning a value.
+m3 -> With parameters and not returning a value.
+m4 -> With parameters but returning a value.
+
+parameter = gift
+return value = return gift
+
+The method can return any type of data independent of data type of parameters.
+For example:
+	public String vishal(int num) {
+		
+		if(num == 0)
+			return "Zero";
+		else if(num > 0)
+			return "Positive";
+		else
+			return "Negative";
+		
+	}
+
+	public boolean aniket(int n) {
+		if(n%2 == 0)
+			return true;
+		else
+			return false;
+	}
+
+We can have n no of parameters to a method but we can return only single value.
+
+We must collect the data in a variable of same data type which the method is returning.
+
+While calling parameterized method, no of parameters, data type of parameters and sequence of parameters must match.
+
+Practice tasks:
+
+1. WAM to return ASCII value of a character passed as a parameter.
+
+2. WAM to return average of 5 numbers passed as a parameter.
+
+3. WAM to return true if the number passed as a parameter is 2 digit else return false.
+
+4. WAM to return "Success" if the number passed as a parameter is 1234 else return "Failed".
+
+5. WAM to return "Valid" if the number passed as a parameter is even as well as 2 digit. Return "Invalid" otherwise.

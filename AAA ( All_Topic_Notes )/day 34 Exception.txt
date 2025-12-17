@@ -1,0 +1,83 @@
+Q. What is Exception? OR Define Exception.
+A. The Exception is unwanted situation which terminates the code without giving expected output.
+
+Q. What is Exception Handling?
+A. To manage that unwanted situation.
+
+Q. Why to handle exception?
+A. To generate the expected output
+
+Q. How to handle exception?
+A. try catch finally throw throws
+
+try block -> Risky code: The code that might get exceptions
+
+catch block -> Exception handling code
+
+finally block -> The code to execute by default
+
+throw keyword -> To throw exception explicitly in the code
+
+throws keyword -> To inform the JVM about upcoming exception
+
+Q. What is Exception Hierarchy?
+A. Throwable class -> Exception class -> Multiple child classes of Exception class.
+The Exception is in built class in Java in java.lang package.
+
+Q. What are types of Exceptions?
+A. Compile-time and Runtime.
+Note:
+Compile-time Exceptions are also called as Checked Exceptions.
+Runtime Exceptions are also called as Unchecked Exceptions.
+
+The throw is used to invite the Exception in the code explicitly.
+For example:
+package a.b.c;
+
+public class Demo {
+	
+	public static void main(String[] args) throws StringIndexOutOfBoundsException {
+		
+		StringIndexOutOfBoundsException obj = new StringIndexOutOfBoundsException();
+		throw obj;
+		
+	}
+}
+
+Note:
+The throw keyword is generally used with the Custom Exceptions.
+The Custom Exceptions are the Exceptions customized according to the requirements.
+
+For example:
+public class LowBalanceException extends Exception {
+
+}
+
+public class Demo {
+	
+	public static void main(String[] args) {
+		
+		try {
+			LowBalanceException obj = new LowBalanceException();
+			throw obj;
+		} catch (LowBalanceException e) {
+			System.out.println("Send Mail & SMS");
+		}
+		
+	}
+}
+
+The throws doesn't handle any exception using try catch block. It only informs the JVM about the upcoming exception.
+
+For example:
+package a.b.c;
+
+public class Demo {
+	
+	public static void main(String[] args) throws StringIndexOutOfBoundsException {
+		
+		String str = "Vishal";
+		System.out.println(str.charAt(25));
+		
+	}
+}

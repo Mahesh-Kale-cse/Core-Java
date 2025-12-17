@@ -1,0 +1,121 @@
+4. WAP to accept 10 numbers from user and count even numbers.
+Solution:
+int count = 0;
+		int[] m = new int[10];
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter 10 numbers: ");
+		
+		for (int i = 0; i < m.length; i++) {
+			m[i] = s.nextInt();
+		}
+		
+		for (int i = 0; i < m.length; i++) {
+			if(m[i]%2 == 0)
+				count++;
+		}
+		
+		System.out.println(count + " even numbers found!");
+
+5. WAP to accept 10 numbers from user and add all odd numbers.
+Solution:
+int sum = 0;
+		int[] m = new int[10];
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter 10 numbers: ");
+		
+		for (int i = 0; i < m.length; i++) {
+			m[i] = s.nextInt();
+		}
+		
+		for (int i = 0; i < m.length; i++) {
+			if(m[i]%2 == 1)
+				sum+=m[i];
+		}
+		
+		System.out.println(sum);
+
+Q. WAP to accept 10 numbers from user and find their average.
+Solution:
+int sum = 0;
+		int[] m = new int[10];
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter 10 numbers: ");
+		
+		for (int i = 0; i < m.length; i++)
+			m[i] = s.nextInt();
+		
+		for (int i = 0; i < m.length; i++)
+				sum+=m[i];
+		
+		System.out.println(sum/10.0F);
+
+Q. WAP to accept 7 boolean values from the user and count total no of false values.
+Solution:
+int count = 0;
+		boolean[] m = new boolean[7];
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter 7 boolean values: ");
+		
+		for (int i = 0; i < m.length; i++)
+			m[i] = s.nextBoolean();
+		
+		for (int i = 0; i < m.length; i++)
+				if(m[i] == false)
+					count++;
+		
+		System.out.println(count);
+
+Q. WAP to accept marks of 6 subjects and count in how many subjects you have scored more than 90.
+Solution:
+	int count = 0;
+		float[] m = new float[6];
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter marks of 6 subjects: ");
+		
+		for (int i = 0; i < m.length; i++)
+			m[i] = s.nextFloat();
+		
+		for (int i = 0; i < m.length; i++)
+				if(m[i] > 90)
+					count++;
+		
+		System.out.println(count);
+
+Q. WAP to accept 10 symbols from the user and count only alphabets from it.
+Solution:
+int count = 0;
+		char[] m = new char[10];
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter 10 symbols: ");
+		
+		for (int i = 0; i < m.length; i++)
+			m[i] = s.next().charAt(0);
+		
+		for (int i = 0; i < m.length; i++)
+				if( (m[i] >= 'A' && m[i] <= 'Z') || (m[i] >= 'a' && m[i] <= 'z'))
+					count++;
+		
+		System.out.println(count);
+
+Q. WAP to accept password from the user (character by character) and print all digits from it.
+Solution:
+	char[] m = new char[10];
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter password: ");
+		
+		for (int i = 0; i < m.length; i++)
+			m[i] = s.next().charAt(0);
+		
+		for (int i = 0; i < m.length; i++)
+				if( m[i] >= '0' && m[i] <= '9')
+					System.out.println(m[i]);
+
+Q. WAP to accept 5 numbers from the user and print all 3 digit numbers from it.
+
+Q. WAP to accept 10 numbers from the user and print alternate numbers from it.
+
+Q. WAP to accept 5 fruit names from the user and print them in reverse order.
+
+Q. WAP to accept 10 boolean values from the user and perform ANDing on all.
+
+Q. WAP to accept 20 symbols from the user and print no of alphabets, no of digits and no of special symbols.

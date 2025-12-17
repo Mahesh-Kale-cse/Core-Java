@@ -1,0 +1,51 @@
+Q. What is Collection Framework? OR Define Collection Framework
+A. The Collection Framework is the collection of multiple in built classes and interfaces.
+
+Q. What are advantages of Collection Framework?
+A. No limitations on data type, No limitations on size, Many in built powerful methods
+
+Q. What is Collection Hierarchy?
+A. Collection interface -> Set, Queue, List, Map, ...
+
+Set -> Maintains unique elements only, no duplicates are allowed
+Queue -> Maintains FCFS order
+List -> Stores the elements for random storage
+Map -> Stores data in Key-Value pairs
+
+The Set is in built interface in java.util package.
+It is a collection that contains no duplicate elements.
+That means it maintains or saves only unique elements.
+
+The famous implementations of Set interface are:
+HashSet -> maintains random order
+LinkedHashSet -> maintains insertion order
+TreeSet -> maintains sorted order
+
+Methods in Set interface:
+add, remove, clear, size
+
+Sample code:
+HashSet<Object> s = new HashSet<Object>();
+		
+		s.add(21);
+		s.add(true);
+		s.add('D');
+		s.add("Success");
+		s.add(21);
+		s.add(3.1416F);
+		
+		System.out.println(s.size());//5
+		System.out.println(s);
+		s.remove('D');
+		System.out.println(s.size());//4
+		System.out.println(s);
+
+Pending for tomorrow:
+Queue interface - practical
+
+Q. WAP to accept name of your 5 friends.
+
+A. Print all friends in ascending order.
+B. Remove Manoj from your friend circle.
+C. Remove all friends from your circle.
+D. Check if Neha is your friend or not. Hint: contains method

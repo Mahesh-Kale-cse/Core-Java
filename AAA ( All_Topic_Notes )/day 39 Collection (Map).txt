@@ -1,0 +1,69 @@
+Q. As we can declare ArrayList<String>, can we declare ArrayList<Student> where Student is not in built class but the user defined class?
+A. Yes.
+
+Sample code:
+
+public class Student {
+    
+             public int roll;
+             public String name;
+
+             public Student (int roll, String name) {
+                    this.roll = roll;
+                    this.name = name;
+             }
+
+             @Override
+             public String toString() {
+                    return roll+":"+name;
+             
+             }
+
+}
+
+public class Demo{
+   
+    public static void main(String args[]){
+        
+            ArrayList<Student> list = new ArrayList<Student>();
+
+            Student s1 = new Student(1, "Mahesh");
+            Student s2 = new Student(2, "Prathamesh");
+            Student s3 = new Student(3, "Shyam");
+
+            list.add(s1);
+            list.add(s2);
+            list.add(s3);
+
+            System.out.println(list);
+
+    }
+    
+
+}
+
+Map:
+
+The Map is in built interface in java.util package. 
+It saves the data in Key-Value pairs.
+The Map is an object that maps keys to values.
+A map cannot contain duplicate keys.
+
+Key-Value pair:
+<RollNo-Student> -><1-Sakshi>, <2-Rahul>, <3-Vaishnavi> 
+<CountryCode-Country> -> <91-India>, <5-USA>, <12-Nepal>
+<AccNo-Customer> -> <321233889-Ravi>, <32843429-Puja>, <743234634-Om>
+
+Implementations of Map interface: 
+HashMap -> maintains random order
+LinkedHashMap -> maintains insertion order
+TreeMap -> maintains sorted order
+
+Methods in Map interface:
+put, keyset, values, containkey, containValue, get, getOrDefault, isEmpty, Clear, size
+
+
+practice the methods of Map show in above ^^^^^^
+
+
+

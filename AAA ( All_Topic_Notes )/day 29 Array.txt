@@ -1,0 +1,83 @@
+Q. What is array? Or Define Array.
+A. The Array is collection of multiple values of similar type in contagious memory locations.
+
+Q. What is need of array?
+A. It reduces memory traversal
+
+Q. What are types of arrays?
+A1. Initialized & Non-Initialized
+A2. 1D, 2D, 3D, .... , Multi dimentional
+
+Initialized Array = Array with initialized value
+Non-Initialized Array = Array without initialized value
+
+Syntax of Initialized Array:
+dataType array_name[] = {value1, value2, ... , valueN};
+			OR
+dataType[] array_name = {value1, value2, ... , valueN};
+
+Example of Initialized Array:
+
+String names[] = { "Anuj", "Vishal", "Aniket", "Abhishek" };		
+int[] numbers = {8, 1, 3, 9, 7, 2, 4, 6, 5, 10};
+
+Syntax of Non-Initialized Array:
+
+dataType array_name[] = new dataType[SIZE];
+			OR
+dataType[] array_name = new dataType[SIZE];
+
+Example of Initialized Array:
+
+String names[] = new String[5];		
+int[] numbers = new int[10];
+
+Note:
+
+When we know the values, we use initialized array; but when we know only the number of values i.e. size but not the actual values then we use non initialized array.
+
+Sample code 1:
+	int[] m = {8, 1, 3, 9, 7, 2, 4, 6, 5, 10};
+	
+	for (int i = 0; i < m.length; i++) {
+		System.out.println(m[i]);
+	}
+
+Sample code 2:
+int[] m = new int[5];
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter 5 numbers: ");
+		
+		for (int i = 0; i < m.length; i++) {
+			m[i] = s.nextInt();
+		}
+		
+		for (int i = 0; i < m.length; i++) {
+			System.out.println(m[i]);
+		}
+
+Sample code 3:
+String[] friends = new String[3];
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter 3 friend names: ");
+		
+		for (int i = 0; i < friends.length; i++) {
+			friends[i] = s.next();
+		}
+		
+		System.out.println("Your friend circle is: ");
+		for (int i = 0; i < friends.length; i++) {
+			System.out.println(friends[i]);
+		}
+
+Practice tasks:
+
+1. WAP to accept 10 numbers from user and print them.
+
+2. WAP to accept 5 boolean values from user and count all true values.
+
+3. WAP to print array of vowels in reverse order.
+
+4. WAP to accept 10 numbers from user and count even numbers.
+
+5. WAP to accept 10 numbers from user and add all odd numbers.

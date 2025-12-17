@@ -1,0 +1,127 @@
+In all the loops, i.e. for, while and do-while, the braces are optional if and only if the block contains only single lines of code.
+Even if the block contains 2 LOC (or more) then the braces are mandatory.
+
+Proof:
+	int i = 1;
+	do
+		System.out.println(i++);
+	while (i <= 5);
+
+	int i = 1;
+	while (i <= 5) 
+		System.out.println(i++);
+	
+	for (int i = 1; i <= 5; i++)
+		System.out.println(i);
+
+The Nested loops is the loop inside another loop.
+
+It can be any combination of for, while and do-while. That means, we write any loop inside any loop.
+
+For example, for inside while, do-while inside for, while inside another while etc.
+
+The codes for practicing the nested loops are patterns!
+
+Sample code:
+	
+	for (int i = 1; i <= 5; i++)
+	{
+		for (int j = 1; j <= 2; j++) {
+			
+			System.out.println(i + " " + j);
+		}
+	}
+
+The break statement breaks the entire remaining loop.
+
+Code 1:
+	for (int i = 1; i <= 10; i++)
+	{
+		if(i == 5) {
+			break;
+		}
+		System.out.println(i);
+	}
+Output:
+1
+2
+3
+4
+
+Code 2. for (int i = 1; i <= 10; i++)
+		{
+			System.out.println(i);
+			
+			if(i == 5) {
+				break;
+			}
+		}
+Output:
+1
+2
+3
+4
+5
+
+The continue statement skips the current iteration ONLY and continues the remaining loop.
+
+Code 1:
+	for (int i = 1; i <= 10; i++)
+	{
+		if(i == 5) {
+			continue;
+		}
+		
+		System.out.println(i);
+	}
+Output:
+1
+2
+3
+4
+6
+7
+8
+9
+10
+
+	boolean flag = true;
+		
+	for (int i = 1; i <= 10; i++)
+	{
+		if(i == 25) {
+			flag = false;
+		}
+	}
+	
+	if(flag == true) {
+		System.out.println("Condition was not satisfied");
+	}
+	else {
+		System.out.println("Condition was satisfied");
+	}
+
+Prime no code:
+int n = 7;
+		boolean divisible = false;
+		
+		for (int i = 2; i < n; i++) {
+			
+			if(n%i == 0)
+			{
+				divisible = true;
+				break;
+			}
+		}
+		if(divisible)
+			System.out.println(n + " is not prime");
+		else
+			System.out.println(n + " is prime");
+
+Practice Tasks:
+
+1. WAP to add all the digits of a number.
+2. WAP to reverse a number. Use other loops.
+3. WAP to multiply all the digits of a number.
+4. WAP to find average of all digits of a number.
+5. WAP to count the digits of a number.

@@ -1,0 +1,61 @@
+🧩 Character Class Methods
+These work on single characters (char), not entire strings.
+
+Method                       Belongs to     Description                                         Example                        Output
+-------------------------------------------------------------------------------------------------------------------------------
+Character.isLetter(ch)        Character     Checks if ch is a letter (A–Z or a–z).           Character.isLetter('A')        true
+Character.isDigit(ch)         Character     Checks if ch is a digit (0–9).                   Character.isDigit('5')         true
+Character.isUpperCase(ch)     Character     Checks if ch is an uppercase letter.             Character.isUpperCase('M')     true
+Character.isLowerCase(ch)     Character     Checks if ch is a lowercase letter.              Character.isLowerCase('m')     true
+Character.toUpperCase(ch)     Character     Converts ch to uppercase.                        Character.toUpperCase('b')     'B'
+Character.toLowerCase(ch)     Character     Converts ch to lowercase.                        Character.toLowerCase('H')     'h'
+
+🟢 These are static methods, so you call them using the Character class, not a string.
+
+🧠 String Class Methods
+These work on entire strings (String), not single characters.
+
+Method                       Belongs to     Description                                         Example                           Output
+-----------------------------------------------------------------------------------------------------------------------------------------------
+str.length()                  String         Returns the number of characters in the string.    "Apple".length()                    5
+str.charAt(index)             String         Returns the character at a specific index.         "Mango".charAt(2)                  'n'
+str.toLowerCase()             String         Converts the whole string to lowercase.            "APPLE".toLowerCase()             "apple"
+str.toUpperCase()             String         Converts the whole string to uppercase.            "mango".toUpperCase()             "MANGO"
+str.contains("text")          String         Checks if the string contains certain letters.     "apple".contains("p")              true
+str.startsWith("A")           String         Checks if the string starts with a certain letter. "Apple".startsWith("A")            true
+str.endsWith("e")             String         Checks if the string ends with a certain letter.   "Apple".endsWith("e")              true
+str.equals("text")            String         Compares two strings (case-sensitive).             "Apple".equals("apple")            false
+str.equalsIgnoreCase("text")  String         Compares two strings ignoring case.                "Apple".equalsIgnoreCase("apple")  true
+str.trim()                    String         Removes spaces from the beginning and end.         "  mango  ".trim()                "mango"
+
+💡 Tip to Remember:
+Character methods → Work with single characters (char).
+String methods → Work with entire words or sentences (String).
+
+Always loop through strings using charAt() when checking individual characters.
+
+Use Character methods to detect letters, digits, or case.
+
+Use String methods for whole string operations like length(), contains(), startsWith(), split().
+
+Start simple — count letters, then add conditions (like vowels/consonants).
+
+Practice case-insensitive checks with toLowerCase() or toUpperCase().
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+String Practice Tasks:
+
+1. WAP to accept name of the user and count the number of characters in it.
+
+2. WAP to accept username & password from the user and check if the login is successful or not.
+Note: successful login attempt = username and password must be same.
+
+3. WAP to accept password from the user and count no of alphabets and digits.
+
+4. WAP to accept fruit name from the user and check fruit is valid or not.
+Note: valid fruit is the one who has p or m in its name.
+
+5. WAP to accept names of 5 friends of the user. Store them in an array. Print only those friends whose name starts with K.
+
+

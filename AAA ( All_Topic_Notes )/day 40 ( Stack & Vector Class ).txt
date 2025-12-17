@@ -1,0 +1,40 @@
+Stack class -> LIFO
+
+Step 1: Create an object of Stack 
+Step 2: add elements using push() method 
+Step 3: remove elements using pop() method 
+Step 4: Display all elements using SOP
+
+Sample code:
+       Stack<String> s = new Stack<String>();
+       s.push("Mango");
+       s.push("Apple");
+       s.push("Cherry");
+       s.push("Litchy");
+       s.push("Stawberry");
+
+       System.out.println(s);
+       s.pop();
+       System.out.println(s);
+
+
+Explore  Vector class
+
+......
+
+
+
+
+
+
+Problem :
+
+Q. Create ArrayList of Student class. The Student class has variables like rollNo, name, address, gender, marks. Add 10 objects of Student class in the array list.
+
+1. Print all the students with marks above 85.
+2. Display all the students who live in Aundh.
+3. Display names of all students with their phone numbers. 
+4. Print contact information of the topper of the class. 
+5. Print address of Rohan.
+
+Mail the code at: abhijit@thekiranacademy.com

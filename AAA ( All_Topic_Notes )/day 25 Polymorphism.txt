@@ -1,0 +1,84 @@
+Meaning of Polymorphism:
+Many forms or versions of a thing
+
+Meaning of Polymorphism in Java:
+Many forms or versions of a method
+
+Q. What are the types of Polymorphism?
+A. Static Polymorphism & Dynamic Polymorphism
+
+Static Polymorphism = Compile time Polymorphism = Early Binding = Method Overloading
+Dynamic Polymorphism = Runtime Polymorphism = Late Binding = Method Overriding
+
+Overloading:
+Putting extra load beyond the limit
+
+Truck Overloading:
+Putting extra load beyond the limit on trucks
+
+Method Overloading:
+Putting extra load beyond the limit on methods
+Defining multiple times
+
+Syntax and flow of Method Overloading:
+
+public class Home {
+	
+	public void add(int a, int b) {
+		System.out.println(a+b);
+	}
+	
+	public void add(int a, int b, int c) {
+		System.out.println(a+b+c);
+	}
+	
+	public void add(int a, int b, int c, int d) {
+		System.out.println(a+b+c+d);
+	}
+}
+
+Bullet points:
+
+1. Overloading = Normal task + Extra task(s)
+
+2. The method with same names but different parameters are overloaded.
+
+3. The method with same names and same parameters are duplicate.
+
+4. The method can be overloaded n times.
+
+5. The constructors can be overloaded.
+For example:
+
+public class Car {
+	
+	public String name;
+	public String color;
+	
+	public Car() {
+		System.out.println("Hi!");
+	}
+	
+	public Car(String name) {
+		this.name = name;
+	}
+	
+	public Car(String name, String color) {
+		this.name = name;
+		this.color = color;
+	}
+	
+	
+}
+
+Q. Why to overload methods?
+A. To group together logically similar methods.
+A. To perform some common functionality in different ways.
+
+login(String username, String password)
+login(String emailID)
+login(long phone, String OTP)
+
+bookTicket() -> books 1 ticket
+bookTicket(int n) -> books n ticket
+bookTicket(int n, String type) -> books n tickets of given category

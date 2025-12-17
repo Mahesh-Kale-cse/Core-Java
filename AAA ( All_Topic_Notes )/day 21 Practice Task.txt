@@ -1,0 +1,15 @@
+Practice Task:
+
+Q1. WAP to create Shop class with following variables in it:
+shopID, shopName, shopAddress, shopOwner, shopRegNo, shopPAN.
+Apart from shopRegNo & shopPAN other variables are private.
+
+Create 2 objects of shop class using 2 different constructors.
+Use scanner for accepting inputs from the user.
+Getter & Setter methods are mandatory.
+
+Q2. WAP to create Book class with following variables in it:
+bID, bName, bAuthor and bPrice. All the variables are private.
+Create 5 objects of shop class using 5 different constructors.
+Use scanner for accepting inputs from the user.
+Getter & Setter methods are mandatory.

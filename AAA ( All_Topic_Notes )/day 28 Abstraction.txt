@@ -1,0 +1,57 @@
+Q. What is Abstract class? Or Define Abstract class.
+A. The Abstract class is the class which contains both type of methods, normal as well as abstract.
+
+Normal class -> normal methods
+Interface -> abstract methods
+Abstract class -> normal methods + abstract methods
+
+Q. What is the need of Abstract class?
+A. Whenever we need to host both types of methods under the same roof, we must use abstract class.
+
+Syntax of abstract class:
+accessSpecifier abstract class class_name {
+
+}
+
+Example of abstract class:
+public abstract class Car {
+	
+	public void m1() {
+		
+	}
+	
+	public abstract void m2();
+}
+
+Bullet points:
+
+1. We can not instantiate the abstract class.
+
+2. The abstract class must have child class.
+
+3. The abstract class is extended in its child class.
+
+4. The abstract class can have multiple normal methods and multiple abstract methods.
+
+5. We can not achieve multiple inheritance using abstract class.
+
+6. The abstract class can not be declared as final.
+Proof:
+public final abstract class Vehicle {
+	
+	public void m3() {
+		
+	}
+	
+	public abstract void m4();
+}
+//Error: The class Vehicle can be either abstract or final, not both
+Note:
+A. final variable -> it can not change the value.
+B. final method -> it can not be overridden.
+C. final class -> it can not be inherited.
+
+Homework:
+
+1. Interface Vs abstract class
+2. Normal class Vs abstract class

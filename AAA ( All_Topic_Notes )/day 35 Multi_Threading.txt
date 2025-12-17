@@ -1,0 +1,29 @@
+Q. What is thread?
+A. The thread is lightweight part of some process. Sub-process.
+
+Q. What is Multi-threading?
+A. When many threads run parallelly in the system it is called as multi-threading.
+
+Q. What is the need of Multi-threading?
+A. To complete the tasks faster.
+
+Q. What is Thread class?
+A. The thread is in built class in Java in java.lang package.
+
+Q. What is Runnable interface?
+A. The Runnable is in built interface in Java in java.lang package.
+
+Q. What is Thread life cycle?
+A. Create, Ready to run, Running, Waiting & Destroy
+
+Agenda of tomorrow:
+
+sleep method
+Runnable interface
+name of thread
+priority of thread
+daemon thread
+
+Practice Session:
+JBK Test - Threads
+Refer the PDF & codes

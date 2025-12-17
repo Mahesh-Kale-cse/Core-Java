@@ -1,0 +1,95 @@
+Syntax of while loop:
+
+	initialization;
+	
+	while(condition)
+	{
+		n no of LOC
+		updates
+	}
+
+Examples of while loop:
+
+	int i = 1;
+		
+	while(i <= 5)
+	{
+		System.out.println(i);
+		i++;
+	}
+
+Syntax of do-while loop:
+	
+	initialization;
+	
+	do
+	{
+		n no of LOC
+		updates
+	}
+	while(condition);
+
+Examples of do-while loop:
+	
+	int i = 1;
+		
+	do
+	{
+		System.out.println(i);
+		i++;
+	}
+		while(i <= 5);
+
+Note:
+
+1. The for and while loops are called as Entry controlled loops or pre-condition loops.
+
+2. The do-while loop is called as Exit controlled loop or post-condition loop.
+
+3. The do-while loop executes at least once.
+
+Agenda of tomorrow:
+Nested loops
+break statement
+continue statement
+flag system
+
+Code 1:
+
+	int n;
+		for (int i = 12; i <= 15; i++) {
+			n = i;
+			while(n != 0) {
+				System.out.print(n%10);
+				n = n / 10;
+			}
+			System.out.println();
+		}
+
+Code 2:
+
+        for(int n = 381; n != 0; n = n / 10)
+		{
+			System.out.print(n % 10);
+		}
+
+Code 3:
+
+	int n = 381;
+		
+		do {
+			System.out.print(n % 10);
+			n = n / 10;
+		}
+		while (n != 0);
+
+Code 4:
+
+        int n = 381;
+		
+		while (n != 0) {
+			System.out.print(n % 10);
+			n = n / 10;
+		}
+
+	

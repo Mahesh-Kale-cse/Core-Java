@@ -1,0 +1,157 @@
+Java Practice Problems on Switch-Case
+
+
+1. Day of the Week Write a program that takes an integer (1–7) as input and prints the
+corresponding day of the week using a switch-case. If the number is not between 1 and 7, print
+'Invalid Day'.
+2. Calculator Create a program that takes two integers and a character as input (+, -, *, /). Use
+switch-case to perform the corresponding arithmetic operation and print the result.
+3. Vowel or Consonant Take a character as input and use a switch-case to check whether it is a
+vowel (a, e, i, o, u) or a consonant. Print the result.
+4. Month Name Write a program that takes a number (1–12) and prints the name of the
+corresponding month using a switch-case. If the number is outside this range, print 'Invalid Month'.
+5. Grade System Accept a character as input representing grades (A, B, C, D, F). Use switch-case
+to display a remark (e.g., A → Excellent, B → Good, C → Average, D → Poor, F → Fail).
+6. Traffic Light Accept a string (Red, Yellow, Green) as input. Use switch-case to print the action to
+take: Red → Stop, Yellow → Get Ready, Green → Go.
+7. Menu Driven Program Display a menu with options: 1. Area of Circle 2. Area of Square 3. Area of
+Rectangle Use switch-case to perform the selected operation. Use if-else if needed for input
+validation.
+8. Season Finder Take a month number (1–12) as input and use switch-case to print the season: -
+Dec–Feb → Winter - Mar–May → Summer - Jun–Aug → Rainy - Sep–Nov → Autumn
+9. Number in Words Take a digit (0–9) as input and use switch-case to print its word representation
+(0 → Zero, 1 → One, etc.).
+10. Even/Odd using Switch Accept an integer as input. Use if-else to check whether it is even or
+odd, and then use a switch-case to print: Case 0 → 'Even', Case 1 → 'Odd'.
+
+
+Java Switch-Case Problem Solutions
+
+
+
+1. Day of the Week
+```java
+int day = 3;
+switch(day) {
+case 1: System.out.println("Monday"); break;
+case 2: System.out.println("Tuesday"); break;
+case 3: System.out.println("Wednesday"); break;
+case 4: System.out.println("Thursday"); break;
+case 5: System.out.println("Friday"); break;
+case 6: System.out.println("Saturday"); break;
+case 7: System.out.println("Sunday"); break;
+default: System.out.println("Invalid Day");
+}
+```
+2. Calculator
+```java
+int a = 10, b = 5;
+char op = '+';
+switch(op) {
+case '+': System.out.println(a + b); break;
+case '-': System.out.println(a - b); break;
+case '*': System.out.println(a * b); break;
+case '/': System.out.println(a / b); break;
+default: System.out.println("Invalid Operator");
+}
+```
+3. Vowel or Consonant
+```java
+char ch = 'e';
+switch(ch) {
+case 'a': case 'e': case 'i': case 'o': case 'u':
+case 'A': case 'E': case 'I': case 'O': case 'U':
+System.out.println("Vowel");
+break;
+default: System.out.println("Consonant");
+}
+```
+4. Month Name
+```java
+int month = 12;
+switch(month) {
+case 1: System.out.println("January"); break;
+case 2: System.out.println("February"); break;
+case 3: System.out.println("March"); break;
+case 4: System.out.println("April"); break;
+case 5: System.out.println("May"); break;
+case 6: System.out.println("June"); break;
+case 7: System.out.println("July"); break;
+case 8: System.out.println("August"); break;
+case 9: System.out.println("September"); break;
+case 10: System.out.println("October"); break;
+case 11: System.out.println("November"); break;
+case 12: System.out.println("December"); break;
+default: System.out.println("Invalid Month");
+}
+```
+5. Grade System
+```java
+char grade = 'B';
+switch(grade) {
+case 'A': System.out.println("Excellent"); break;
+case 'B': System.out.println("Good"); break;
+case 'C': System.out.println("Average"); break;
+case 'D': System.out.println("Poor"); break;
+case 'F': System.out.println("Fail"); break;
+default: System.out.println("Invalid Grade");
+}
+```
+6. Traffic Light
+```java
+String color = "Red";
+switch(color) {
+case "Red": System.out.println("Stop"); break;
+case "Yellow": System.out.println("Get Ready"); break;
+case "Green": System.out.println("Go"); break;
+default: System.out.println("Invalid Color");
+}
+```
+7. Menu Driven Program
+```java
+int choice = 1;
+double radius = 5, side = 4, length = 6, breadth = 3;
+switch(choice) {
+case 1: System.out.println("Area of Circle = " + (3.14 * radius * radius)); break;
+case 2: System.out.println("Area of Square = " + (side * side)); break;
+case 3: System.out.println("Area of Rectangle = " + (length * breadth)); break;
+default: System.out.println("Invalid Choice");
+}
+```
+8. Season Finder
+```java
+int monthNum = 7;
+switch(monthNum) {
+case 12: case 1: case 2: System.out.println("Winter"); break;
+case 3: case 4: case 5: System.out.println("Summer"); break;
+case 6: case 7: case 8: System.out.println("Rainy"); break;
+case 9: case 10: case 11: System.out.println("Autumn"); break;
+default: System.out.println("Invalid Month");
+}
+```
+9. Number in Words
+```java
+int digit = 5;
+switch(digit) {
+case 0: System.out.println("Zero"); break;
+case 1: System.out.println("One"); break;
+case 2: System.out.println("Two"); break;
+case 3: System.out.println("Three"); break;
+case 4: System.out.println("Four"); break;
+case 5: System.out.println("Five"); break;
+case 6: System.out.println("Six"); break;
+case 7: System.out.println("Seven"); break;
+case 8: System.out.println("Eight"); break;
+case 9: System.out.println("Nine"); break;
+default: System.out.println("Invalid Digit");
+}
+```
+10. Even/Odd using Switch
+```java
+int num = 11;
+int rem = num % 2;
+switch(rem) {
+case 0: System.out.println("Even"); break;
+case 1: System.out.println("Odd"); break;
+}
+```

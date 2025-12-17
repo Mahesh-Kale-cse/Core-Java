@@ -1,0 +1,84 @@
+Q. How constructor behaves with inheritance?
+A. If we call constructor of child class then constructor of parent class gets called and then constructor of child class gets called.
+
+For example:
+public class Father {
+	
+	public Father() {
+		System.out.println("Father - cons");
+	}
+}
+
+public class Son extends Father {
+
+	public Son() {
+		System.out.println("Son - cons");
+	}
+}
+
+public class Home {
+	
+	public static void main(String[] args) {
+		
+		Father f = new Father();
+	}
+}
+
+Observations:
+
+1. If we call non-para constructor of child class then non-para constructor of parent class gets called.
+
+2. If we call para constructor of child class then non-para constructor of parent class gets called.
+
+3. If we want to change this behavior, we use super keyword in constructor of child class.
+
+4. The use of super keyword must be done in constructor of child class and that too in the first line.
+
+5. The usage of super keyword is optional.
+
+Example:
+public class Father {
+	
+	public String farm;
+	
+	public Father() {
+		System.out.println("Father: non-para cons");
+	}
+	
+	public Father(String farm) {
+		System.out.println("Father: para-cons");
+	}
+}
+public class Son extends Father {
+
+	public String degree;
+	
+	public Son() {
+		System.out.println("Son:non-para cons");
+	}
+	
+	public Son(String degree) {
+		super("50 acres");
+		System.out.println("Son: para-cons");
+	}
+}
+public class Home {
+	
+	public static void main(String[] args) {
+		Son s = new Son("Mihir");
+	}
+}
+
+Note:
+A. Calling the constructor of parent class from the constructor of the child class is called as Constructor 
+Chaining.
+
+B. The Constructor Chaining can also be achieved using this keyword.
+
+Practice Session:
+
+1. JBK Test - Inheritance
+2. Task
+
+Task:
+WAP to create a class Grandpa with variable as surname and a method to display the surname. Create a class Father with variable as job and a method to show that job value. Create a class Uncle with variable as farm and a method to print the farm. The Father class has 2 child classes Pratham and Pratiksha with variables as friends and degree respectively. The class Uncle has child class Pankaj with variable as business. All child class has methods to print their variables. Create 1 object of each Pratham, Pratiksha and Pankaj and print their assets.

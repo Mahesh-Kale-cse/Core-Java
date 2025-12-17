@@ -1,0 +1,60 @@
+Practice tasks:
+
+1. WAP to print table of the number.
+Solution:
+	
+	int n = 7;
+		
+	for (int i = 1; i <= 10; i++) {
+		System.out.println(n*i);
+	}
+	
+	for (int i = 9; i <= 90; i+=9) {
+		System.out.println(i);
+	}
+
+2. WAP to add all the numbers between 20 to 25.
+Solution:
+	int sum = 0;
+		
+	for (int i = 20; i <= 25; i++) {
+		sum = sum + i;
+		//sum+=i;
+	}
+	
+	System.out.println(sum);
+
+3. WAP to find average of all the numbers between 35 to 39.
+Solution:
+	
+	int sum = 0;
+	int count = 0;
+	
+	for (int i = 35; i <= 39; i++) {
+		sum = sum + i;
+		count++;
+	}
+	
+	System.out.println(sum / count);
+
+Practice tasks:
+
+1. Write a Java program using a for loop and if-else to print whether numbers from 1 to 20 are even or odd.
+
+2. Write a program to print numbers from 1 to 50. If a number is divisible by 3, print 'Fizz', if divisible by 5 print 'Buzz', otherwise print the number itself.
+
+3. Write a Java program that prints all prime numbers between 1 and 100 using a for loop and if-else conditions.
+
+4. Write a program to calculate the factorial of a number using a for loop. Use if-else to handle the case when the number is 0 or 1.
+
+5. Write a Java program to print the sum of even numbers and odd numbers separately between 1 to 100 using for loop and if-else.
+
+6. Write a program that prints all numbers from 1 to 30, but if the number is divisible by both 3 and 5, print 'HelloWorld', if only by 3 print 'Hello', if only by 5 print 'World'.
+
+7. Write a program using for loop and if-else to count how many numbers between 1 and 200 are divisible by 7.
+
+8. Write a program to reverse the digits of a given number using for loop and if-else conditions.
+
+9. Write a Java program that prints the multiplication table of a number using a for loop. Use if-else to skip printing multiples of 5.
+
+10. Write a program that prints all numbers from 1 to 100. Use if-else to print 'Even Square' if the square of the number is even, and 'Odd Square' if the square is odd.

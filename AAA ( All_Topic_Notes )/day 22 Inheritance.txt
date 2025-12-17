@@ -1,0 +1,105 @@
+Meaning of Inheritance in Java:
+One class (Child class) gets data from another class (Parent class).
+
+Need of Inheritance:
+It saves time and efforts of developer to create new things in child class.
+
+Syntax with example:
+
+public class A {
+	public int a;
+	public void showA() {
+		System.out.println(a);
+	}
+}
+
+public class B extends A {
+	public int b;
+	public void showB() {
+		System.out.println(b);
+	}
+}
+
+Observations:
+
+1. The child class gets data from the parent class.
+2. The parent class never gets data from the child class.
+3. The sibling class never gets data from another sibling class.
+4. The extends keyword shows the inheritance.
+
+Types of Inheritance:
+
+1. Single OR Simple: A -> B
+Example:
+public class A {
+	public int a;
+	public void showA() {
+		System.out.println(a);
+	}
+}
+
+public class B extends A {
+	public int b;
+	public void showB() {
+		System.out.println(b);
+	}
+}
+
+2. Multi-level: A -> B -> C -> D -> ....
+Example:
+public class A {
+	
+	public int a;
+
+	public void showA() {
+		System.out.println(a);
+	}
+}
+
+public class B extends A {
+	
+	public int b;
+
+	public void showB() {
+		System.out.println(b);
+	}
+}
+
+public class C extends B {
+	
+	public int c;
+	
+	public void showC() {
+		System.out.println(c);
+	}
+}
+
+3. *Multiple: (A, B, C, ... ) -> Z
+4. Hierarchical: A -> (B, C, D, .... , Z)
+Example:
+public class A {
+	
+	public int a;
+
+	public void showA() {
+		System.out.println(a);
+	}
+}
+public class B extends A {
+	
+	public int b;
+
+	public void showB() {
+		System.out.println(b);
+	}
+}
+public class C extends A {
+	
+	public int c;
+	
+	public void showC() {
+		System.out.println(c);
+	}
+}
+
+5. Hybrid: Combination of any of above types

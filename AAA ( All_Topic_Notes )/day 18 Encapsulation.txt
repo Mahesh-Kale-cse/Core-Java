@@ -1,0 +1,28 @@
+Meaning of Encapsulation in Java:
+Binding together logically related data.
+For example:
+
+public class Fruit {
+	//We take following variables - logically related data
+	public String name, color, taste, type, price, shape, season;
+
+	//We do NOT take following variables - logically not related data
+	public String address, desg, salary;
+}
+
+getter method -> the method which gets the value of variable.
+
+setter method -> the method which sets the value of variable.
+
+The getter method is always non-parameterized.
+The setter method is always parameterized.
+
+The getter method always returns a value.
+The setter method never returns a value.
+
+The getter and setter method always follow camel case.
+
+The getter and setter method are always public.
+
+Q. What is need of getter and setter method?
+A. To access private data of the class outside that class.

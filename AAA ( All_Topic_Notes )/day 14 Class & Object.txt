@@ -1,0 +1,106 @@
+Q. What is class?
+A. The class is blueprint of the object.
+A. The class is collection of variables & methods.
+For example: Scoop machine.
+For example: PAN Card.
+
+Q. What is object?
+A. The object is real time entity.
+A. The object is instance of the class.
+For example: n scoops of Ice cream.
+For example: n photo copies of PAN Card
+
+Q. Why to create class?
+A. To describe an entity.
+
+Q. Why to create object?
+A. To represent a real time object or thing.
+
+There are 9 objects of Student class in this room.
+
+Home decor: Curtains
+Electronics: Switchboards Laptop AC Projector CCTV
+Stationary: Pen stand Books
+Furniture: Chairs
+
+class = category = type
+
+Here, Home decor, Electronics, Stationary & Furniture are 4 classes.
+
+The Switchboards Laptop AC Projector and CCTV are the objects of Electronics class.
+
+The Curtains is object of Home decor class.
+
+The Pen stand Books are the objects of Stationary class.
+
+The chair is object of Furniture class.
+
+Q. How to create class?
+A. Right click on SRC -> New -> Class -> Type class name -> Finish
+
+Syntax of class:
+accessSpecifier class class_name {
+
+}
+
+Example of class:
+public class Car {
+
+}
+
+Q. How to create object?
+A. class_name object_name = new class_name();
+
+1. We can create multiple classes.
+
+2. We can create objects from the class.
+
+3. We can create multiple objects from a class.
+
+4. Every object has separate and independent set of variables and methods from its class.
+
+5. We must use a dot operator to access the variables and method of the objects.
+
+6. The main() method can be written in any class.
+
+7. We can run only that class which has main method in it.
+
+8. We can NOT run the class which has no main method in it.
+
+Sample code:
+
+Student.java File:
+public class Student {
+	
+	public String name;
+	public String address;
+	
+	public void showStudentInfo() {
+		
+		System.out.println("Name: " + name);
+		System.out.println("Address: " + address);
+	}
+}
+
+Batch.java File:
+public class Batch {
+	
+	public static void main(String[] args) {
+		
+		Student c1 = new Student();
+		Student c2 = new Student();
+		Student c3 = new Student();
+		
+		c1.name = "Harshada";
+		c2.name = "Vishal";
+		c3.name = "Amit"; 
+		
+		c1.address = "Pune";
+		c2.address = "Mumbai";
+		c3.address = "Delhi";
+		
+		c1.showStudentInfo();
+		c2.showStudentInfo();
+		c3.showStudentInfo();
+	}
+}

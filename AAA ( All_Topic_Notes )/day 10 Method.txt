@@ -1,0 +1,77 @@
+Q. What is Method?
+A. The Method is block of code that is defined once and called multiple times.
+
+Method Definition -> To tell the method, what to do
+Method Call -> To use that method
+
+Q. When to use methods?
+A. Whenever we need to execute the same code again and again, we must go for the methods.
+
+Q. Why to use methods?
+A. To avoid the code repetition.
+
+Syntax of Method Definition:
+
+accessSpecifier keywords returnType method_name(parameters)
+{
+
+}
+
+Examples of Method definition:
+public void show()
+{
+	System.out.println("Hello World!");
+}
+
+public void display()
+{
+	System.out.println("Welcome User!");
+}
+
+public void add(int a, int b)
+{
+	System.out.println(a+b);
+}
+
+Syntax of Method Call:
+
+class_name object_name = new class_name();
+object_name.method_name();
+
+Example of method call:
+
+Demo d = new Demo();
+d.display();
+d.show();
+d.add(5, 7);
+
+Q. What are the types of methods?
+A. parameterized & non-parameterized
+
+parameterized methods = methods with parameters
+non-parameterized = methods without parameters
+
+For example:
+//non-parameterized methods
+public void display()
+{
+	System.out.println("Welcome User!");
+}
+
+//parameterized methods
+public void add(int a, int b)
+{
+	System.out.println(a+b);
+}
+
+Practice Tasks:
+
+1. WAM to print Hi on the console.
+
+2. WAM to show addition, subtraction, multiplication and division of two numbers on the screen.
+
+3. WAM to calculate factorial of a number.
+
+4. WAM to display reverse of a number.
+
+5. WAM to find and print AND operation of two boolean values.

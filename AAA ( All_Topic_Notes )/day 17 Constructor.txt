@@ -1,0 +1,7 @@
+The default constructor is provided by the System IF AND ONLY IF we don't have any constructors defined in a class.
+
+The use of this keyword:
+The "this" keyword always points to the instance or global variables.
+
+Source -> Generate constructor using fields -> select all -> Generate
+Note: Delete the 1st line with super keyword.

@@ -1,0 +1,69 @@
+The Scanner is in built class in Java in java.util package.
+
+The major usage of this class is to accept input from the user.
+
+Sample code 1:
+import java.util.Scanner;
+
+public class Home {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter number: ");
+		
+		int n = sc.nextInt();
+		
+		System.out.println("You enetered " + n);
+	}
+}
+
+Note:
+
+A. The Scanner class has dedicated methods for accepting different types of input.
+For example:
+To accept byte, we have method nextByte()
+To accept short, we have method nextShort()
+To accept int, we have method nextInt()
+To accept long, we have method nextLong()
+To accept float, we have method nextFloat()
+To accept double, we have method nextDouble()
+To accept boolean, we have method nextBoolean()
+To accept character, we have method next().charAt(0)
+To accept String, we have method nextLine()
+
+B. To accept multiple inputs, only single object of Scanner class is created.
+For example:
+import java.util.Scanner;
+
+public class Home {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter name: ");
+		String name = sc.nextLine();
+		
+		System.out.println("Enter phone: ");
+		long phone = sc.nextLong();
+		
+		System.out.println("Enter ht: ");
+		float ht = sc.nextFloat();
+		
+		System.out.println(name + " " + phone + " " + ht);
+	}
+}
+
+Practice Tasks:
+
+1. WAP to accept radius and calculate area of the circle.
+
+2. WAP to accept number and find its cube.
+
+3. WAP to accept number and print its table.
+
+4. WAP to accept first name, middle name and surname and print full name.
+
+5. WAP to accept 5 numbers and display average of them.

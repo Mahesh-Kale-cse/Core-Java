@@ -1,0 +1,81 @@
+The sleep method is the in built and static method in Thread class.
+It causes the currently executing thread to sleep.
+The thread sleeps means temporarily ceases its execution.
+It sleeps for specified number of milliseconds.
+Note: 1 second = 1000 milliseconds
+
+For example:
+
+public class Spotify extends Thread {
+		
+	@Override
+	public void run() {
+		
+		try {
+			for (int i = 1; i <= 10; i++) {
+				System.out.println("Playing song...");
+				Thread.sleep(1000);
+			}
+		} catch (Exception e) {
+		}
+	}
+}
+
+The Runnable is in built interface in java.lang package.
+
+To achieve threading mechanism in a class which is already extending some another class.
+
+For example:
+class Car {
+
+}
+
+class Breeza extends Car implements Runnable {
+
+}
+
+name of thread
+
+Each thread has a name. To identify it.
+By default thread name is given as thread-0, thread-1, thread-2, ..... 
+We can customize the name of the thread.
+The name is private variable of the Thread class and hence it can be accessed using its getter and setter methods.
+
+For example:
+	Spotify s = new Spotify();
+	s.setName("Music Player");
+	System.out.println(s.getName());
+
+priority of thread:
+
+Each thread has priority. The range is 1 to 10. The default value is 5.
+The priority is also private variable of the Thread class and hence it can be accessed using its getter and setter methods.
+
+For example:
+	Spotify s = new Spotify();
+	s.setPriority(8);
+	System.out.println(s.getPriority());
+
+Note: If we set the priority of the thread to some out of range value then we get IllegalArgumentException.
+For example:
+	Spotify s = new Spotify();
+	s.setPriority(18);
+Output:
+Exception in thread "main" java.lang.IllegalArgumentException
+	at java.base/java.lang.Thread.setPriority(Thread.java:1138)
+	at a.b.c.Demo.main(Demo.java:8)
+
+The daemon thread is the thread which is immortal thread.
+That means this thread can not be terminated.
+
+We can make our thread as daemon thread.
+We need to call setDaemon method as:
+	Spotify s = new Spotify();
+	s.setDaemon(true);
+
+We can check any thread if it is daemon thread or not.
+We need to call isDaemon method as:
+	Spotify s = new Spotify();
+	System.out.println(s.isDaemon());
+
+Homework: Revise Functional Interface.

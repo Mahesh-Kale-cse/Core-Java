@@ -1,0 +1,177 @@
+The if else is also called as Flow control statements or Decision making statements or Conditional statements.
+
+Q. What is Condition? OR Define condition.
+A. The condition is any programming expression or statement which returns true or false value. We can think of it as an objective question.
+For example:
+n is greater than 10 or not -> n > 10
+variable m is zero or not -> m == 0
+variable a is even or not -> a%2 == 0
+
+Versions of if else:
+
+1. if
+2. if else
+3. if else ladder
+4. if with multiple conditions
+5. nested if else
+
+Syntax of if:
+
+if(condition)
+{
+
+}
+
+Example of if:
+
+if(n > 10)
+{
+
+}
+
+Code 1:
+	int n = 25;
+		
+	if(n > 10)
+	{
+		System.out.println("Inside if");
+	}
+Output: Inside if
+
+Code 2:
+	int n = 2;
+		
+	if(n > 10)
+	{
+		System.out.println("Inside if");
+	}
+Output: Blank
+
+Code 3:
+int num = 95;
+		
+		if(num < 100)
+		{
+			System.out.println("Less than 100!");
+		}
+Output: Less than 100!
+
+Syntax of if else:
+
+if(condition)
+{
+
+}
+else
+{
+
+}
+
+Code 1:
+	int num = 12;
+			
+	if(num > 0)
+	{
+		System.out.println("Greater than 0!");
+	}
+	else
+	{
+		System.out.println("LEsser than 0!");
+	}
+Output: Greater than 0!
+
+Code 2:
+int num = -8;
+		
+		if(num > 0)
+		{
+			System.out.println("Greater than 0!");
+		}
+		else
+		{
+			System.out.println("Lesser than 0!");
+		}
+Output: Lesser than 0!
+
+Syntax of if else ladder:
+
+if(condition1)
+{
+
+}
+else if(condition2)
+{
+
+}
+else if(condition3)
+{
+
+}
+else
+{
+
+}
+
+Example 1:
+int n = 12;
+
+		if(n == 1)
+		{
+			System.out.println("One");
+		}
+		else if(n == 2)
+		{
+			System.out.println("Two");
+		}
+		else if(n == 3)
+		{
+			System.out.println("Three");
+		}
+		else
+		{
+			System.out.println("I don't know!");
+		}
+Output: I don't know!
+
+Example 2:
+char ch = 'Y';
+
+		if(ch == 'A') {
+			System.out.println("Apple");
+		}
+		else if(ch == 'B') {
+			System.out.println("Ball");
+		}
+		else if(ch == 'C') {
+			System.out.println("Cat");
+		}
+		else {
+			System.out.println("Java!");
+		}
+Output: Java!
+
+Code 1:
+int n = 205;
+
+		if(n == 0) {
+			System.out.println("Zero!");
+		}
+		else if(n%2 == 0) {
+			System.out.println("Even");
+		}
+		else {
+			System.out.println("Odd");
+		}
+
+Code 2:
+int n = 0;
+
+		if(n == 0) {
+			System.out.println("Zero!");
+		}
+		else if(n > 0) {
+			System.out.println("Positive");
+		}
+		else {
+			System.out.println("Negative");
+		}

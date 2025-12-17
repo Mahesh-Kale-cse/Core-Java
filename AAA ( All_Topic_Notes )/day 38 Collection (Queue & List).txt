@@ -1,0 +1,52 @@
+Queue -> Maintains FCFS order
+
+The Queue is in built interface in java.util package.
+It is a collection which can contain duplicate elements.
+
+The famous implementations of Queue interface are:
+Deque: Doubly ended queue
+ArrayDeque, LinkedList
+
+Methods in Set interface:
+add, addFirst, addLast, remove, removeFirst, removeLast, clear, size, contains
+
+Sample code:
+	ArrayDeque<String> aq = new ArrayDeque<String>();
+		
+	aq.add("Mango");
+	aq.add("Kiwi");
+	aq.add("Apple");
+	aq.add("Cherry");
+	aq.add("Kiwi");
+	aq.add("Papaya");
+	aq.add("Kiwi");
+	
+	System.out.println(aq.getFirst());
+	System.out.println(aq.getLast());
+
+List -> index based addition, deletion and retrieval
+
+The List is in built interface in java.util package.
+It is a collection which can contain duplicate elements.
+
+The famous implementations of List interface are:
+ArrayList -> Resizable array
+
+Methods in List interface:
+add, remove, clear, size, contains
+
+Sample code:
+	ArrayList<String> list = new ArrayList<String>();
+		
+	list.add("Mango");
+	list.add("Apple");
+	list.add("Kiwi");
+	list.add("Papaya");
+	list.add("Cherry");
+	
+	list.remove(3);
+	System.out.println(list.get(2));
+	list.add(2, "Strawberry");
+	System.out.println(list);
+
+As we can declare ArrayList<String>, can we declare ArrayList<Student> where Student is not in built class but the user defined class.

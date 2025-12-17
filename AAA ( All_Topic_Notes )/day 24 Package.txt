@@ -1,0 +1,20 @@
+Meaning of Package in Java = Pack of multiple classes
+
+Package is nothing but another folder inside SRC folder.
+
+The package has many files (classes & interfaces) in it.
+
+Package declaration: The first line in the class which tells from which package that class belongs to.
+
+The Package declaration is not applicable for the classes in default Package.
+
+We can create multiple packages inside SRC folder.
+
+We can have n no of classes inside any package.
+
+The nested packages are not allowed. We can not create package inside another package.
+
+When we need to use a class in same package we should not import it.
+When we need to use a class in another package we must import it.
+
+Class name with package name = Fully qualified name of that class.

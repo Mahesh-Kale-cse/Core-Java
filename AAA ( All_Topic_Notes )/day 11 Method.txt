@@ -1,0 +1,67 @@
+1. accessSpecifier:
+This tells who can access of this method.
+The possible values can be public, private, protected and writing nothing.
+Note: writing nothing = the default access specifier
+
+2. keywords:
+We can write static or final or abstract keywords if needed.
+
+3. returnType:
+This tells the compiler that this method returns what type of data to the developer. The possible values are byte, short, int, long, float, double, boolean, char, String, ... i.e. any data type OR void.
+Note: Printing and Returning are DIFFERENT!
+
+4. method_name:
+The name of the method should be any logically meaningful name.
+It also follows Naming Conventions.
+
+5. parameters:
+The input to the method without which the method can not perform its given task.
+The parameters are optional and hence we have 2 types of methods: parameterized and non-parameterized.
+
+The parameters become local variables of that method.
+
+public class Demo {
+	
+	public void aditya(int n) {
+		System.out.println(n * n * n);
+	}
+	
+	public void milind(int n) {
+		if(n == 0)
+			System.out.println("n is zero!");
+		else if(n%2 == 0)
+			System.out.println(n + " is even.");
+		else
+			System.out.println(n + " is odd.");
+	}
+	
+	public void astha(int a, int b) {
+		
+		for (int i = a; i <= b; i++) {
+			System.out.println(i);
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		Demo d = new Demo();
+		d.astha(4, 16);
+	}
+}
+
+Practice tasks:
+
+1. WAM with name sakshi which accepts a character and print its ASCII value.
+
+2. WAM with name pratiksha which accepts 3 numbers and prints minimum of them.
+
+3. WAM with name abhishek which accepts 3 numbers and prints maximum of them.
+
+4. WAM with name sanket which accepts PIN and prints login success or failed.
+
+5. WAM with name Mangesh which accepts a Boolean value and checks if it true or false.
+
+6. WAM with name Aniket which accepts a name and greets him/her Welcome.
+
+7. WAM with name vishal which accepts a number and checks if it is prime or not.

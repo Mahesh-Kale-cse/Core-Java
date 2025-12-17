@@ -1,0 +1,79 @@
+The switch case is also one of the Flow Control statements.
+
+We can write multiple cases in switch but all the cases must be unique. No duplicates are allowed.
+
+The order of the cases can be any.
+
+The use of break statement is optional.
+Note: If we skip the usage of break statement, then the switch case mis-behaves.
+
+The use of default is also optional.
+Note: If we skip the usage of default, then the switch case mis-behaves.
+
+The switch case doesn't support all the data types. It supports only byte short int char and in non-primitive, Strings and Enum
+
+The braces of case body are always optional. It doesn't depend on no of LOC.
+
+We can write n no of LOC inside any case.
+
+The nested switch case is possible.
+
+Syntax & Flow of switch case:
+
+	switch(expression)
+	{
+		case value1:
+		case value2:
+		case value3:
+		.
+		.
+		.
+		case valueN:
+		default:
+	}
+
+Example of switch case:
+
+	int num = 9;
+	switch(num)
+	{
+		case 1: 
+			System.out.println("Hi!");
+			System.out.println("One!");
+			break;
+		case 2: 
+			System.out.println("Hello!");
+			System.out.println("Two!");
+			break;
+		case 3: 
+			System.out.println("How are you?");
+		System.out.println("Three!");
+			break;
+		default:
+			System.out.println("Good bye!");
+	}
+
+Code 1:
+	int num = 8;
+		
+	switch (num%2)
+	{
+		case 0: System.out.println("Even"); break;
+		case 1: System.out.println("Odd"); break;
+	}
+
+Code 2:
+
+	char operation = '*';
+		int a = 9;
+		int b = 3;
+		
+		switch (operation)
+		{
+			case '+': System.out.println(a+b); break;
+			case '-': System.out.println(a-b); break;
+			case '*': System.out.println(a + " X " + b + " = " + (a*b)); break;
+			case '/': System.out.println(a/b); break;
+			case '%': System.out.println(a%b); break;
+			default: System.out.println("Invalid operation");
+		}

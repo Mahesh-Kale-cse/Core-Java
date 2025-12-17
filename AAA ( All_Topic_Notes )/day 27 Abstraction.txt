@@ -1,0 +1,59 @@
+The Abstraction has 2 parts as follows
+1. interfaces
+2. abstract class
+
+Q. What is abstract method?
+A. The method with no body.
+
+Syntax of abstract method:
+accessSpecifier abstract returnType method_name(parameters);
+
+Examples of abstract method:
+public abstract void show();
+
+Q. Why to write abstract method?
+A. Whenever we don't know concrete definition of the method, we must make it abstract.
+
+Q. Why to write normal method?
+A. Whenever we know concrete definition of the method, we must make it normal.
+
+Q. What is interface? OR Define interface.
+A. The interface is collection of variables and abstract methods.
+
+Q. Why do we need interface?
+A. To host abstract methods.
+
+Q. Why do we need class?
+A. To host normal methods.
+
+Q. What is the Syntax of interface?
+A.
+	accessSpecifier interface interface_name {
+	
+	}
+
+Q. What is the example of interface?
+A.
+	public interface Car {
+	
+	}
+
+Note: The class & interface are totally different.
+Proof:
+Q. What is class? OR Define class.
+A. The class is collection of variables and normal methods.
+
+Q. What is interface? OR Define interface.
+A. The interface is collection of variables and abstract methods.
+
+The interface can not be instantiated.
+
+Core Java:
+instance = object
+To instantiate = To create object
+
+Note: Using classes, we can not achieve multiple inheritance but using interfaces we can achieve it.
+
+Homework:
+1. Functional interface
+2. Marker interface (OR Tagged interface)

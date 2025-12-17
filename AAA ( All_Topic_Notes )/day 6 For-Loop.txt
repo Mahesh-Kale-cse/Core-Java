@@ -1,0 +1,203 @@
+Iterative statements = Repetitive statements = loops
+
+If we want to execute some code again and again multiple times, then we must use loops.
+
+Types of loops:
+1. for loop
+2. while loop
+3. do-while loop
+4. for each loop
+
+Syntax of for loop:
+
+	for(initialization; condition; updates)
+	{
+		n no of LOC
+	}
+
+Example of for loop:
+
+	for(int i = 1; i <= 5; i++)
+	{
+		System.out.println("Hello!");
+	}
+	
+	System.out.println("Outside!");
+
+Output:
+Hello!
+Hello!
+Hello!
+Hello!
+Hello!
+Outside!
+
+Codes:
+
+1. for(int i = 1; i <= 10; i++)
+		{
+			System.out.println(i);
+		}
+		
+		System.out.println("Outside!");
+Output:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Outside!
+
+2. for(int i = 68; i <= 72; i++)
+		{
+			System.out.println(i);
+		}
+Output:
+68
+69
+70
+71
+72
+
+3. for(int i = 10; i <= 100; i+=10)
+		{
+			System.out.println(i);
+		}
+Output:
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+
+4. for(char i = 'A'; i <= 'Z'; i++)
+		{
+			System.out.print(i + " ");
+		}
+Output:
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+
+5. for(int i = 10; i >= 1; i--)
+		{
+			System.out.println(i);
+		}
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+6. 	for(int i = 10; i >= 1; i++)
+	{
+		System.out.println(i);
+	}
+Output:
+10
+11
+.
+.
+.
+Infinity
+
+7. 
+	for(int i = 1; i <= 10; i++)
+	{
+		if(i == 5)
+		{
+			System.out.println(i);
+		}
+	}
+Output: 5
+
+8. 
+	for(int i = 1; i <= 10; i++)
+	{
+		if(i%2 == 0)
+		{
+			System.out.println(i);
+		}
+	}
+Output:
+
+9.
+	for(int i = 1; i <= 10; i++)
+		{
+			if(i >= 4)
+			{
+				System.out.println(i);
+			}
+		}
+Output:
+4
+5
+6
+7
+8
+9
+10
+
+10.
+	for(int i = 1; i <= 10; i++)
+		{
+			if(i%4 == 0)
+			{
+				System.out.println(i + " is completely divisible by 4");
+			}
+			else
+			{
+				System.out.println(i + " is NOT completely divisible by 4");
+			}
+		}
+Output:
+1 is NOT completely divisible by 4
+2 is NOT completely divisible by 4
+3 is NOT completely divisible by 4
+4 is completely divisible by 4
+5 is NOT completely divisible by 4
+6 is NOT completely divisible by 4
+7 is NOT completely divisible by 4
+8 is completely divisible by 4
+9 is NOT completely divisible by 4
+10 is NOT completely divisible by 4
+
+Bullet points:
+
+1. We can write any version of if else, switch case inside the for loop.
+
+2. The nested for loop is allowed.
+
+3. The condition is checked multiple times.
+
+4. The body of the for loop is executed if the condition returns true.
+
+5. After every iteration, the control goes to the updates.
+
+6. After updates, the control goes to check the condition.
+
+7. The for loop can lead to infinite iterations.
+
+8. The initialization happens only once and that too in the beginning of the loop.
+
+Practice tasks:
+
+1. WAP to print table of the number.
+
+2. WAP to add all the numbers between 20 to 25.
+
+3. WAP to find average of all the numbers between 35 to 39.

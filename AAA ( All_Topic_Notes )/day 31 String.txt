@@ -1,0 +1,24 @@
+Q. What is String?
+A. The String is in built class in Java in java.lang package. The String is non-primitive data type in Java.
+
+Q. When to use them?
+A. To save any input of words type.
+
+Q. How to use String?
+A. The String values are mentioned in double quotes.
+For example: String str = "Yash";
+
+Note: There are following 2 ways of using Strings.
+1. String s1 = "Yash";
+2. String s2 = new String("Yash");
+s1 is String literal whereas s2 is object of String class.
+
+The String literals goes into SCP.
+
+The SCP stands for String Constant Pool which is a special type of memory inside heap area. It stores string values only.
+
+The String is immutable.
+immutable = permanent = unchangeable = constant
+
+Few methods of String class:
+length, charAt, codePointAt, contains, equals, equalsIgnoreCase, startsWith, endsWith, indexOf, lastIndexOf, replace, substring, repeat, concat, split, trim

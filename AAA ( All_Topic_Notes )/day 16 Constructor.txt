@@ -1,0 +1,87 @@
+Meaning of Constructor - The one who constructs/creates
+
+Meaning of Constructor in Java - The one who constructs/creates object from the class.
+
+PAN Card = class
+Photo copies = objects
+Xerox machine = Constructor
+
+Q. What is Constructor? OR Define Constructor.
+A. The Constructor is special method with name same as class name and with no return type; not even void.
+For example:
+public class Car {
+
+	public void show() {
+		System.out.println("This is normal method.");
+	}
+	
+	public Car() {
+		System.out.println("This is constructor.");
+	}
+}
+
+Q. What are types of Constructor?
+A. There are 3 types of constructors in Java as parameterized, non-parameterized and default.
+
+Note:
+There is huge difference between non-parameterized and default constructor.
+
+parameterized constructor = constructor with parameters
+written by developer
+
+non-parameterized constructor = constructor without parameters
+written by developer
+
+default constructor = constructor without parameters
+written by System
+
+Syntax of Constructor:
+
+accessSpecifier class_name(parameters) {
+
+}
+
+Examples of Constructor:
+
+	public Car() {
+		System.out.println("This is constructor.");
+	}
+
+	public Car(int n) {
+		System.out.println("This is constructor.");
+	}
+
+Normal method Vs Constructor:
+
+1. return type
+2. name
+3. types
+4. calling fashion - normal method needs object for getting called
+whereas the constructor needs new keyword to get called.
+5. motive
+
+Q. Why to use Constructor?
+A. To create objects from the class and to initialize their instance variables.
+
+For example:
+public class Car {
+
+	public String name;
+	public String color;
+	
+	public Car() {
+		name = "Innova";
+		color = "Gray";
+	}
+	
+	public Car(String n, String c) {
+		name = n;
+		color = c;
+	}
+
+	public static void main(String[] args) {
+		Car c = new Car();
+		System.out.println(c.name);
+		System.out.println(c.color);
+	}
+}
